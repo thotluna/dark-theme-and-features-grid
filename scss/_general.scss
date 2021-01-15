@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font: normal 14px $font-body;
+}
+
+h1, h2, h3, h4, h5, h6, button {
+    font-family: $font-head;
+    font-weight: 700;
+}
+a {
+    color: $White;
+    text-decoration: none;
+    display: block;
+    line-height: 1.5;
+    padding: 0.5em;
+    font-size: 12px;
+}

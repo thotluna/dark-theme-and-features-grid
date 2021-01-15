@@ -1,0 +1,100 @@
+.testimonials {
+    font-size: 1rem;
+    color: $White;
+    .wrapper--v {
+        padding-bottom: 0px;
+        @media(min-width: $vp_tablet) {
+            padding-bottom: 1.785em;
+        }
+    }
+
+    &::before {
+        content: "";
+        background: url('../../images/bg-quotes.png') no-repeat center center/cover;
+        display: block;
+        width: 22px;
+        height: 18px;
+        position: relative;
+        top: 10.3em;
+        left: 3.5em;
+
+        @media(min-width: $vp_tablet) {
+            width: 55px;
+            height: 45px;
+            top: 11em;
+            left: 10em;
+        }
+    }
+
+    .testimonials--container {
+        margin: 8.5em 2em 0;
+        // margin-left: 2em;
+        // margin-right: 2em ;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2em;
+
+        @media(min-width: $vp_tablet) {
+            grid-template-columns: 1fr 1fr 1fr;
+
+        }
+
+    }
+
+    .card {
+        background-color: $testimonial_background;
+        border-radius: .5em;
+        padding: 1.428em;
+        z-index: 1;
+
+        @media(min-width: $vp_tablet) {
+            max-width: 360px;
+
+        }
+
+        .card--user {
+            justify-content: start;
+        }
+
+        p {
+            font-size: .714em;
+            margin-bottom: 1.428em;
+
+            @media(min-width: $vp_tablet) {
+                font-size: 1.0714em;
+            }
+        }
+
+        h3 {
+            font-family: $font-body;
+            font-size: .762em;
+            font-weight: 700;
+
+            @media(min-width: $vp_tablet) {
+                font-size: .785em;
+            }
+
+        }
+
+        h4 {
+            font-family: $font-body;
+            font-size: .55em;
+            font-weight: 400;
+
+            @media(min-width: $vp_tablet) {
+                font-size: .5em;
+            }
+        }
+
+        img {
+            border-radius: 50%;
+            width: 24px;
+            height: auto;
+            margin-right: 0.64em;
+
+            @media(min-width: $vp_tablet) {
+                width: 26px;
+            }
+        }
+    }
+}

@@ -1,0 +1,63 @@
+.features {
+    font-size: 1rem;
+    margin-top: 3.714em;
+    margin-bottom: 3.714em;
+    .wrapper--v {
+        @media(min-width: $vp_tablet) {
+         padding-top: 0;
+        }
+     }
+
+    .features--container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 5.42em;
+        @media(min-width: $vp_desktop) {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            row-gap: 5.42em;
+            column-gap: 9em;
+        }
+        .feature {
+            width: 100%;
+            max-width: 383px;
+            .feature--header {
+                height: 17.33vw;
+                max-height: 97px;
+                width: auto;
+                margin-bottom: 2.76em;
+                img {
+                    height: 100%;
+                }
+                img[alt~="Access"] {
+                    max-height: 77px;
+                }
+                img[alt~="security"] {
+                    max-height: 88px;
+                }
+                img[alt~="collaboration"] {
+                    max-height: 70px;
+                }
+                img[alt~="any-file"] {
+                    max-height: 63px;
+                }
+    
+    
+            }
+            .feature--body {
+                color: $White;
+                text-align: center;
+                h2 {
+                    font-size: 1.33em;
+                    @media(min-width: $vp_tablet) {
+                        font-size: 1.428em;
+                    }
+                }
+                p {
+                    font-size: 1em;
+                    margin: 1em;
+                }
+            }
+        }
+    }
+}

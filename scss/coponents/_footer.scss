@@ -1,0 +1,95 @@
+footer {
+    font-size: 1rem;
+    background-color: $footer_background;
+
+    img[alt*='logo'] {
+        margin-bottom: 3.285em;
+    }
+
+    .flex {
+        align-items: flex-start;
+    }
+
+    .footer--container {
+        color: $White;
+        padding-top: 17.14em;
+        
+        .footer--container--text {
+            font-size: 1.142em;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 6.35em;
+            @media(min-width: $vp_tablet) {
+                grid-template-columns: 3fr 2fr 1fr;
+                gap: 5em;
+            }
+            .location {
+                @media(min-width: $vp_desktop) {
+                    flex-direction: row;
+                    justify-content: space-between;
+                    // & > div {
+                    //     margin-right: 2em;
+                    // }
+                }
+            }
+            .location  .flex-horizontal  {
+                img  {
+                margin-right: 1em;
+                }
+            }
+            .location > .flex-horizontal {
+                img  {
+                margin-top: 0.4em;
+                }
+            
+            }
+            
+            .phone {
+                margin: 1.7em 0;
+                @media(min-width: $vp_desktop) { 
+                    margin: 0 0 1.4em 0;
+                }
+            }
+
+            .links {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 3.9em;
+                @media(min-width: $vp_tablet) {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+                a {
+                    font-size: 1em;
+                    &:hover {
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            .social {
+                justify-content: center;
+                align-items: center;
+                & div:hover {
+                    color: $cyan;
+                }
+            }
+        }
+    }
+}
+.codeby {
+    margin: 1em;
+    p {
+        color: $White;
+    }
+    a {
+        display: inline;
+    }
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }

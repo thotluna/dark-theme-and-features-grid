@@ -1,0 +1,81 @@
+.access-early {
+    font-size: 1rem;
+    color: $White;
+    text-align: center;
+
+    .access-early--container {
+        position: relative;
+        top: 13.57em;
+        left: 0;
+        background-color: $other_background;
+        width: 100%;
+        max-width: 865px;
+        padding: 2em;
+        border-radius: .5em;
+        @media(min-width: $vp_tablet) {
+            padding: 2em 3.357em;
+            top: 9em;
+        }
+
+        .flex {
+
+            @media(min-width: $vp_tablet) {
+                flex-direction: row;
+            }
+
+            
+        }
+
+        h2 {
+            margin: 1em 0;
+            font-size: 1.285em;
+            @media(min-width: $vp_tablet) {
+                font-size: 2.28em;
+            }
+        }
+
+        p {
+            margin: 1em 0;
+            font-size: 1em;
+            @media(min-width: $vp_tablet) {
+                padding: 0 3.2em;
+            }
+        }
+
+        .inter {
+            font-size: 1rem;
+            width: 100%;
+            margin: 1em 0;
+            padding: 1.285em 2em;
+            border-radius: 2em;
+        }
+        .inter--input {
+            flex: 2;
+        }
+
+        .inter--btn {
+            flex: 1;
+            background-color: $blue;
+            color: $White;
+            border: none;
+            @media(min-width: $vp_tablet) {
+                margin-left: 2rem;
+            }
+        }
+
+        #email:invalid {
+            border: 1px solid $red;
+            flex: 1;
+        }
+
+        .inter--input__error {
+            border: 1px solid $red;
+            flex: 1;            
+        }
+
+        input {
+            display: inline;
+        }
+
+    }
+}

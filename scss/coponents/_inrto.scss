@@ -1,0 +1,73 @@
+.intro {
+    background-color: $other_background;
+    font-size: 1rem;
+    text-align: center;
+    background:
+        url('../../images/bg-curvy-mobile.svg') no-repeat 0 50%/cover,
+        linear-gradient(0deg, $main_background 39%, $other_background 0%);
+    background-size: contain, cover;
+
+    @media(min-width: $vp_tablet) {
+        background:
+            url('../../images/bg-curvy-desktop.svg') no-repeat center 100%/contain,
+            linear-gradient(0deg, $main_background -50%, $other_background -50%);
+    }
+
+    .wrapper--v {
+       @media(min-width: $vp_tablet) {
+            padding-bottom: 5.927em;
+       }
+    }
+
+    .intro--container {
+        width: 80.8vw;
+        max-width: 722px;
+
+        img {
+            width: 80vw;
+            max-width: 720px;
+        }
+
+        .intro--container--text {
+            color: $White;
+
+            h1 {
+                font-size: 1.714em;
+                margin-top: 1.77em;
+                margin-bottom: 1.326em;
+
+                @media(min-width: $vp_tablet) {
+                    font-size: 2.857em;
+                }
+            }
+
+            p {
+                font-size: .928em;
+                line-height: 1.5;
+                margin-left: 1.21em;
+                margin-right: 1.21em;
+
+                @media(min-width: $vp_tablet) {
+                    font-size: 1.428em;
+                    margin-left: 3em;
+                    margin-right: 3em;
+                }
+            }
+
+            a {
+                margin: 2.43em auto;
+
+                @media(min-width: $vp_tablet) {
+                    font-size: 1.14em;
+                    padding: 1.57em 7em;
+                    border-radius: 2.5em;
+                }
+            }
+
+        }
+
+    }
+
+
+
+}

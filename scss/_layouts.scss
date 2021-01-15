@@ -1,0 +1,30 @@
+.container {
+    background-color: $main_background;
+}
+.hidden {
+	display: none;
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-horizontal {
+    @extend .flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.wrapper--h {
+    padding-left: 1.41em;
+    padding-right: 1.41em;
+    @media(min-width: $vp_tablet) {
+        padding-left: 5.714em;
+    padding-right: 5.714em;
+    }
+}
+.wrapper--v {
+    padding-top: 1.785em;
+    padding-bottom: 1.785em;
+}

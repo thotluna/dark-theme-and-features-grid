@@ -1,0 +1,75 @@
+.productive {
+    font-size: 1rem;
+
+    .flex {
+        @media (min-width: $vp_tablet) {
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+
+    img {
+        flex: 1;
+        width: 100%;
+        max-width: 615px;
+        @media (min-width: $vp_tablet) {
+            width: 40vw;
+        }
+    }
+
+    .productive--text {
+        flex: 1;
+        min-width: 300px;
+        color: $White;
+        text-align: center;
+        @media (min-width: $vp_tablet) {
+            margin-left: 4.285em;
+            margin-right: 1.93em;
+            text-align: start;
+        }
+
+        h2 {
+            font-size: 1.269em;
+            margin-top: 3.68em;
+            margin-bottom: 1.73em;
+            @media (min-width: $vp_tablet) {
+                font-size: 2.857em;
+                margin-right: 40%;
+                margin-top: 1.5em;
+                margin-bottom: .73em;
+            }
+        }
+
+        p {
+            text-align: start;
+            font-size: 1em;
+            margin-left: .6em;
+            margin-right: .6em;
+            margin-bottom: 1.428em;
+            @media (min-width: $vp_tablet) {
+                font-size: 1.142em;
+            }
+        }
+
+        .productive--text--link {
+            width: max-content;
+            border-bottom: 2px solid $cyan;
+            
+            a {
+                display: inline-block;
+                text-align: start;
+                font-size: .785em;
+                color: $cyan;
+                &:hover {
+                    font-weight: bold;
+                }                
+            }
+            img {
+                width: .785em;
+            }
+            
+        }
+    }
+
+
+}

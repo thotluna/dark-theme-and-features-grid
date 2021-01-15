@@ -1,0 +1,65 @@
+.btn {
+    display: inline-block;
+    line-height: normal;
+    // font-family: $headings-fonts;
+    // font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    touch-action: manipulation;
+    outline: none;
+    user-select: none;
+    padding: 1em 5.87em;
+    border-radius: 2em;
+    background-color: $blue;
+
+    // color: $w;
+    &:disabled {
+        cursor: not-allowed;
+    }
+
+    &:hover {
+        background-color: $cyan;
+    }
+
+    &:active {
+        background-color: $blue;
+    }
+
+    @media(min-width: $vp_tablet) {
+        font-size: 0.8em;
+        padding: 1em 3em;
+    }
+
+    @media(min-width: $vp_desktop) {
+        font-size: 1em;
+        padding: 1em 6em;
+    }
+}
+
+.btn-social {
+    margin: auto 0.3em;
+    width: 1.7em;
+    height: 1.7em;
+    border: 1px solid;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media(min-width: $vp_tablet) {
+        width: 2em;
+        height: 2em;
+    }
+
+    a {
+        font-size: 0.8em;
+        padding: 0.5em;
+        // color: $white;
+        display: block;
+        @media(min-width: $vp_tablet) {
+            font-size: 1em;
+        }
+
+    }
+}
